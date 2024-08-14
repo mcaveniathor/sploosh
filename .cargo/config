@@ -1,0 +1,3 @@
+[target.arch64-unknown-linux-gnu]
+cc = "aarch64-linux-gnu-gcc"
+linker = "aarch64-linux-gnu-gcc"

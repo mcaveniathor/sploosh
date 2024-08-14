@@ -1,0 +1,51 @@
+[package]
+name = "sploosh"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+bytes = { version = "1.6.1", features = ["serde"] }
+gpio = "0.4.1"
+markup = "0.15.0"
+[dependencies.chrono]
+version = "0.4.38"
+features = ["serde"]
+[dependencies.clap]
+version = "4.5.9"
+features = ["derive"]
+[dependencies.serde]
+version = "1.0.204"
+features = ["derive"]
+[dependencies.serde_json]
+version = "1.0.120"
+[dependencies.sled]
+version = "0.34.7"
+[dependencies.thiserror]
+version = "1.0.63"
+[dependencies.tokio]
+version = "1.38.1"
+features = ["full"]
+[dependencies.tracing]
+version = "0.1.40"
+[dependencies.tracing-subscriber]
+version = "0.3.18"
+features = [
+  "chrono",
+  "serde"
+]
+[dependencies.uuid]
+version = "1.10.0"
+features = [
+    "v4",                # Lets you generate random UUIDs
+    "fast-rng",          # Use a faster (but still sufficiently random) RNG
+    "macro-diagnostics", # Enable better diagnostics for compile-time UUIDs
+    "serde",
+]
+
+[dependencies.axum]
+version = "0.7.5"
+features = [
+  "http2",
+  "macros",
+]
